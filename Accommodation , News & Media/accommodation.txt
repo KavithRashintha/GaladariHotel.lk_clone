@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Maven+Pro:wght@500&family=Poppins:wght@300;400&family=Raleway:wght@200&family=Roboto:wght@300;400&family=Rubik&family=Tinos&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 80vh;
+}
+
+.flex-item-left {
+  background-color: #B99F77;
+  padding: 1px;
+  flex: 50%;
+  background-image: url("https://pix10.agoda.net/hotelImages/271664/-1/f206632c7666eeaaa7f798d6458c45bf.jpg?ca=9&ce=1&s=1000x800");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flex-item {
+  background-color: #B99F77;
+  padding: 1px;
+  flex: 50%;
+  background-image: url("https://q-xx.bstatic.com/xdata/images/hotel/max1000/193293288.jpg?k=87b91bbaa6150747046bac5c1b7fd49d7067d6606535119f8eb19d449ebcc0a0");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flex-item-right {
+  background-color: #B99F77;
+  padding: 1px;
+  flex: 50%;
+  background-image: url("https://pix10.agoda.net/hotelImages/597/59737/59737_16042700150041837083.jpg?ca=13&ce=1&s=900x700");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Responsive layout - makes a one column-layout instead of three-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+/* hr */
+h1{
+   font-family:Garamond;
+   margin: 50px auto;
+   text-align: center;
+   font-size: 10px;
+   max-width: 600px;
+   position:relative;
+   }
+   
+h2{
+   font-family:Garamond;
+   margin: 50px auto;
+   text-align: center;
+   font-size: 30px;
+   max-width: 600px;
+   position:relative;
+   }
+   
+h1:before{
+      content:"";
+      display:block;
+      width: 190px;
+      height: 2px;
+      background: #B99F77;
+      position: absolute;
+      left: 0;
+      top:50%;
+      z-index:-2;
+      }
+      
+h1:after{
+      content:"";
+      display:block;
+      width: 190px;
+      height: 2px;
+      background: #B99F77;
+      position: absolute;
+      right: 0;
+      top:50%;
+      z-index:-2;
+      }
+      
+
+
+/* Fade in bg */
+
+.wrapper{
+    font-family:Courier New;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-10%,-10%);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 565px;
+    width: 100%;
+    opacity: 0;
+    transition: .5 ease;
+    background-color: #813f49;
+}
+
+.wrapper:hover  .overlay{
+    opacity:0.90
+}
+
+</style>
+</head>
+<body>
+
+<div class="main-wrap">
+
+        <!-- Header -->
+
+        <div class="header" style="display: flex;">
+
+            <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-inner">
+
+                    </div>
+                </div>
+                <!-- Logo -->
+
+                <!-- Navigation -->
+            <nav class="navigation">
+
+                    <div class="space"></div>
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <div class="navigation-links">
+                        <ul class="top-section">
+                            <li> <a href="#" style="color: grey; font-size:14px;"> About |</a>  </li>
+                            <li> <a href="#" style="color: grey; font-size:14px;"> Facilities | </a> </li>
+                            <li> <a href="#" style="color: grey; font-size:14px;"> Gallery | </a> </li>
+                            <li> <a href="#" style="color: grey; font-size:14px;"> News & Media | </a> </li>
+                            <li> <a href="#" style="color: grey; font-size:14px;"> Careers | </a> </li>
+                            <li> <a href="#" style="color: grey; font-size:14px;"> Contact </a> </li>
+                        </ul>
+                        <ul  class="bottom-section">
+                            <li> <a href="#"> Dining </a> </li>
+                            <li> <a href="#"> Weddings </a> </li>
+                            <li> <a href="#"> Accommodation </a> </li>
+                            <li> <a href="#"> Meetings & Events</a> </li>
+                            <li> <a href="#"> Special Offers </a> </li>
+                        </ul>
+                    </div>
+            </nav>
+            <!-- Navigation -->
+
+            <!-- Label -->
+            <div class="label">
+                <div class="date"style="display: flex; flex-direction: row; justify-content: center; width: 30%; padding-top:0.2vh; padding-bottom:0vh;">
+                    <p style="text-align: center; color:#C7B393; font-size: 12px;"> JUL <br> 10 </p>
+                </div>
+
+                <div class="description" style="display: flex; flex-direction: row; justify-content: center; width: 80%; padding-top: 0;">
+                    <p style="text-align: center; color: white; font-size: 12px;"> Book Now Pay  Letter </p>
+                </div> 
+            </div>
+            <!-- Label -->
+
+            <!-- Space -->
+            <div class="space" style="width: 15vw;"></div>
+            <!-- Space -->
+
+        </div>
+        <!--Header-->
+    
+        <script src="index.js"></script>
+    </div>
+
+<div class="flex-container" style="height:565px">
+     <div class="flex-item-left">
+       <div class="wrapper">
+         <div class="overlay">
+           <div class="content">
+              <div>
+                <h1 style="color:#B99F77">PRESIDENTIAL FLOOR</h1>
+    
+                <h2 style="color:#B99F77">LUXURY AWAITS YOU</h2>
+    
+                <hr style="height:2px;border-width:0;color:gray;background-color:#B99F77"> 
+              </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+   <div class="flex-item">
+    <div class="wrapper">
+         <div class="overlay">
+           <div class="content">
+              <div>
+                <h1 style="color:#B99F77">EXECUTIVE FLOOR</h1>
+    
+                <h2 style="color:#B99F77">LUXURY AWAITS YOU</h2>
+    
+                <hr style="height:2px;border-width:0;color:gray;background-color:#B99F77"> 
+              </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+   <div class="flex-item-right">
+    <div class="wrapper">
+         <div class="overlay">
+           <div class="content">
+              <div>
+                <h1 style="color:#B99F77">SUPERIOR FLOOR</h1>
+    
+                <h2 style="color:#B99F77">LUXURY AWAITS YOU</h2>
+    
+                <hr style="height:2px;border-width:0;color:gray;background-color:#B99F77"> 
+              </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+</div>
+
+</body>
+</html>

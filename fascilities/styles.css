@@ -1,0 +1,299 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.logo{
+  height: 100%;
+  background-color: white;
+  display: block;
+  padding-left: 10vw;
+  padding-top: 1.4vh;
+}
+
+.logo-inner{
+  height: 6rem;
+  width: 13rem;
+  background-image: url("http://www.galadarihotel.lk/images/logo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header-outer{
+  border-bottom: 4px solid #B99F77 ;
+}
+.space{
+  width: 0.1vw; 
+  height:45px; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.navigation{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+}
+
+.navigation-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border: 0.75px solid rgb(205, 196, 196);
+}
+.navigation-links .top-section{
+  justify-content: flex-end;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+  font-size: clamp(12px, 1vw, 18px);
+}
+
+.navigation-links .bottom-section li{
+  font-family: "proximanova-regular", sans-serif;
+  text-transform: capitalize;
+  border-right: 0.75px solid rgb(205, 196, 196);
+  border-left:0.75px solid rgb(205, 196, 196);
+  font-size: clamp(14px, 1vw, 20px);
+}
+
+.navigation-links .bottom-section li a{
+  padding-left: 1.5vw;
+  padding-right: 2vw;
+}
+
+.navigation-links li{
+  list-style: none;
+}
+
+.navigation-links li  a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: block;
+  padding: 1rem;
+}
+
+.navigation-links .bottom-section :hover{
+  background-color: #eaeaea;
+}
+
+.toggle-button{
+  position: absolute;
+  right: 12rem;
+  top: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: rgb(11, 10, 10);
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+
+  .toggle-button{
+      display: flex;
+  }
+
+  .navigation{
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 15vh;
+  }
+
+  .navigation-links{
+      display: none;
+      width: 100%;
+  }
+
+  .navigation-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navigation-links .top-section{
+      align-items: center;
+  }
+
+  .navigation-links.active {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .space{
+      width: 0vw;
+  }
+}
+
+.label{
+  width: 10vw;
+  height: 100%;
+  background-color: #813F49;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "proximanova-regular", sans-serif;;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Noto Sans HK', sans-serif;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.background{
+    background-image: url(http://galadarihotel.lk/images/facilities/facilities-bg.jpg);
+    background-size: cover;
+    min-height: calc(100vh - 207px);
+}
+
+h3 {
+  color: #b7985b;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  font-family: "Cinzel", serif !important;
+  text-transform: uppercase;
+}
+
+
+.slider {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.text-container{
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
+    left: 0;
+    background-color: rgba(129, 63, 74, 0.9);
+    padding: 15px;
+    transition: all 0.2s ease-in;
+}
+.desc{
+    display: none;
+}
+
+.desc p {
+  color: #e2e0e0;
+  font-size: .95rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+  background: #ff9966; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+
+.slider-card {
+    max-width: fit-content;
+  background: #fff;
+  margin: 50px 25px 90px 25px;
+  border-radius: 5px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.9);
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.slider-card:hover .desc {
+  display: block;
+  cursor: pointer;
+}
+
+.slider-card:hover .text-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(129, 63, 74, 0.9);
+  padding: 15px;
+  transition: all 0.2s ease-in;
+}
+
+.slider-card img {
+  border-radius: 5px 5px 0px 0px;
+}
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+
+.main-wraper {
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  height: 4.5rem;
+  background-color: #31313F;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-details {
+  display: flex;
+  flex-direction: row;
+  padding-left: 8rem;
+}
+
+.details-inner {
+  display: flex;
+  align-items: center;
+  width: 70rem;
+  margin-top: .5rem;
+}
+
+.details-inner p {
+  color: white;
+  font-size: clamp(.7rem, 0.5rem, 1.5rem);
+}
+
+
+.details-inner a {
+  color: white;
+}
+
+.privacy {
+  text-decoration: none;
+}
+
+.footer-icons {
+  width: 100%;
+}
+
+.icons-inner {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1.5rem;
+  padding-right: 7rem;
+}

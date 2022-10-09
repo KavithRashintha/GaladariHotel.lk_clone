@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+header{
+    background-color: white;
+}
+
+/* Header */
+
+.header-outer{
+  border-bottom: 4px solid #B99F77 ;
+}
+
+.logo{
+  height: 100%;
+  background-color: white;
+  display: block;
+  padding-left: 10vw;
+  padding-top: 1.4vh;
+}
+
+.logo-inner{
+  height: 6rem;
+  width: 13rem;
+  background-image: url("http://www.galadarihotel.lk/images/logo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.space{
+  width: 0.1vw; 
+  height:45px; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.navigation{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+}
+
+.navigation-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border: 0.75px solid rgb(205, 196, 196);
+}
+.navigation-links .top-section{
+  justify-content: flex-end;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+  font-size: clamp(12px, 1vw, 18px);
+}
+
+.navigation-links .bottom-section li{
+  font-family: "proximanova-regular", sans-serif;
+  text-transform: capitalize;
+  border-right: 0.5px solid rgb(205, 196, 196);
+  border-left:0.5px solid rgb(205, 196, 196);
+  font-size: clamp(14px, 1vw, 20px);
+}
+
+.navigation-links .bottom-section li a{
+  padding-left: 1.5vw;
+  padding-right: 2vw;
+}
+
+.navigation-links li{
+  list-style: none;
+}
+
+.navigation-links li  a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: block;
+  padding: 1rem;
+}
+
+.navigation-links .bottom-section :hover{
+  background-color: #eaeaea;
+}
+
+.toggle-button{
+  position: absolute;
+  right: 12rem;
+  top: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: rgb(11, 10, 10);
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+
+  .toggle-button{
+      display: flex;
+  }
+
+  .navigation{
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 15vh;
+  }
+
+  .navigation-links{
+      display: none;
+      width: 100%;
+  }
+
+  .navigation-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navigation-links .top-section{
+      align-items: center;
+  }
+
+  .navigation-links.active {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .space{
+      width: 0vw;
+  }
+}
+
+.label{
+  width: 10vw;
+  height: 100%;
+  background-color: #813F49;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "proximanova-regular", sans-serif;;
+}
+
+/* Header */
+
+  .flex-img-container {
+    display: flex;
+    flex-direction: row;
+    width: 1535px;
+    height: 615px;
+  }
+  
+  .flex-img-left {
+    background-color: #B99F77;
+    padding: 1px;
+    flex: 50%;
+    background-image: url("http://www.galadarihotel.lk/images/weddings/function-rooms.jpg?ca=9&ce=1&s=1000x800");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 615px;
+  }
+  
+  .flex-img-mid {
+    background-color: #B99F77;
+    padding: 1px;
+    flex: 50%;
+    background-image: url("http://www.galadarihotel.lk/images/weddings/honeymoon.jpg?ca=9&ce=1&s=1000x800");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 615px;
+  }
+  
+  .flex-img-right {
+    background-color: #B99F77;
+    padding: 1px;
+    flex: 50%;
+    background-image: url("http://www.galadarihotel.lk/images/weddings/wedding.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 615px;
+  }
+  
+  
+  h1{
+     font-family: inherit;
+     font-weight: 500;
+     margin: 50px auto;
+     text-align: center;
+     font-size: 18px;
+     max-width: 600px;
+     position:relative;
+     }
+     
+  h2{
+     font-family: "Cinzel", serif !important;
+     font-weight: 400;
+     margin: 50px auto;
+     text-align: center;
+     font-size: 28px;
+     max-width: 600px;
+     position:relative;
+     }
+     
+  h1:before{
+        content:"";
+        display:block;
+        width: 190px;
+        height: 2px;
+        background: #B99F77;
+        position: absolute;
+        left: 0;
+        top:50%;
+        z-index:-2;
+        }
+        
+  h1:after{
+        content:"";
+        display:block;
+        width: 190px;
+        height: 2px;
+        background: #B99F77;
+        position: absolute;
+        right: 0;
+        top:50%;
+        z-index:-2;
+        }
+        
+  
+  .wrapper{
+      font-family:Courier New;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+  }
+  
+  .content{
+      position: relative;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      -ms-transform: translate(-10%,-10%);
+      text-transform: uppercase;
+      font-size: 40px;
+  }
+  
+  .overlay{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 615px;
+      width: 100%;
+      opacity: 0;
+      transition: .5 ease;
+      background-color: #813f49;
+  }
+  
+  .wrapper:hover  .overlay{
+      opacity:0.90
+  }
+
+  /* Footer */
+.footer-main-wrap{
+  width: 100%;
+  height: 12vh;
+  background-color: #31313F;
+  position: fixed;
+  bottom: 0px;
+  z-index: 2;
+}
+
+.footer-details{
+  display: flex;
+  flex-direction: row;
+  padding-left: 8vw;
+}
+
+.details-inner{
+  display: flex;
+  align-items: center;
+  width: 800vw;
+  margin-top: 2.5vh;
+}
+
+.details-inner p {
+  color: white;
+  font-size: clamp(12px, 0.8vw, 20px);
+}
+
+.details-inner a {
+  color: white;
+  
+}
+
+.footer-icons{
+  width: 100%;
+}
+
+.icons-inner{
+  display: flex; 
+  justify-content: flex-end; 
+  padding-top: 3.7vh; 
+  padding-right: 7vw;
+}
+/* Footer */
+  

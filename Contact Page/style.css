@@ -1,0 +1,344 @@
+body{
+    width: 100%;
+}
+
+.main-wrap{
+    background-image: url('contact-back.png');
+}
+/* Header */
+
+.header-outer{
+    border-bottom: 4px solid #B99F77 ;
+}
+
+.logo{
+    height: 100%;
+    background-color: white;
+    display: block;
+    padding-left: 10vw;
+    padding-top: 1.4vh;
+}
+
+.logo-inner{
+    height: 5.9rem;
+    width: 13rem;
+    background-image: url("http://www.galadarihotel.lk/images/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.space{
+    width: 0.1vw; 
+    height:45px; 
+    margin: 0; 
+    padding: 0;
+    background-color: white;
+}
+
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    background-color: white;
+}
+
+.navigation-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border: 0.75px solid rgb(205, 196, 196);
+}
+.navigation-links .top-section{
+    justify-content: flex-end;
+    font-family: "Raleway", sans-serif;
+    text-transform: capitalize;
+    font-size: clamp(12px, 1vw, 18px);
+}
+
+.navigation-links .bottom-section li{
+    font-family: "proximanova-regular", sans-serif;
+    text-transform: capitalize;
+    border-right: 0.5px solid rgb(205, 196, 196);
+    border-left:0.5px solid rgb(205, 196, 196);
+    font-size: clamp(14px, 1vw, 20px);
+}
+
+.navigation-links .bottom-section li a{
+    padding-left: 1.5vw;
+    padding-right: 2vw;
+}
+
+.navigation-links li{
+    list-style: none;
+}
+
+.navigation-links li  a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 1rem;
+}
+
+.navigation-links .bottom-section :hover{
+    background-color: #eaeaea;
+}
+
+.toggle-button{
+    position: absolute;
+    right: 12rem;
+    top: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: rgb(11, 10, 10);
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navigation{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 15vh;
+    }
+
+    .navigation-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navigation-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navigation-links .top-section{
+        align-items: center;
+    }
+
+    .navigation-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .space{
+        width: 0vw;
+    }
+}
+
+.label{
+    width: 10vw;
+    height: 13.8vh;
+    background-color: #813F49;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "proximanova-regular", sans-serif;
+}
+
+/* Header */
+
+h2 {
+    color: #B99F77;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    margin-bottom: 2px;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0px 15px 0px;
+}
+
+hr {
+      border: 1px solid rgb(180, 162, 81) ;
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+}
+ 
+.box{
+    border: 2px solid rgb(180, 163, 81) ;
+    outline: rgb(148, 85, 85) solid 20px;;
+    margin: auto;  
+    padding: 20px;
+    text-align: left;
+    font-family: "Cinzel", serif !important;
+    background-color: rgb(148, 85, 85);
+    width: 45%;
+    height: auto;
+}
+
+h4 {
+    color: rgb(175, 162, 46);
+    padding-top: 5px;
+    margin: 0px;
+    margin-bottom: 20px;
+    font-family: "Cinzel", serif !important;
+    font-size: 1.1rem;
+    display: block;
+}
+
+p{
+ color: rgba(255, 255, 255, 0.873);
+ font-family: 'Montserrat', sans-serif;
+ font-size: 13px
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+img{
+ width: 12px;
+ height: 12px;
+ align-content: left;
+ margin-right:4px ;
+
+}
+
+.special{
+    color: #B99F77;
+    text-align: center;
+    font-family:'Cinzel', serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.intn {
+    display: block;
+    width: 100%;
+    height: 32px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    margin: 2px;
+   
+}
+
+
+.intn1 {
+    display: block;
+    width: 100%;
+    height: 100px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    margin: 2px;
+}
+
+.subbtn{
+    width: 100%;
+    padding: 15px 25px;
+    color: white;
+    box-sizing: border-box;
+    border-color: #c6af84;
+    background-color: #c6af84;
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.subbtn:hover {
+    background-color:#ba9d67;
+}
+
+table{
+    width: 50%;
+    
+}
+
+.imgad{
+    width: 50px;
+    height: 50px;
+    padding: 50px 0px 20px 0px;
+    margin-left: 200px;
+    margin-right: 500 px;
+
+}
+
+.imgad1{
+    width: 94px;
+    height: 52px;
+    padding: 50px 0px 20px 0px;
+    margin-left: 1000px;
+   
+ }
+
+  /* Footer */
+  .footer-main-wrap{
+    width: 100%;
+    height: 12vh;
+    background-color: #31313F;
+    position: fixed;
+    bottom: 0px;
+    z-index: 2;
+  }
+  
+  .footer-details{
+    display: flex;
+    flex-direction: row;
+    padding-left: 8vw;
+  }
+  
+  .details-inner{
+    display: flex;
+    align-items: center;
+    width: 800vw;
+    margin-top: 2.5vh;
+  }
+  
+  .details-inner p {
+    color: white;
+    font-size: clamp(12px, 0.8vw, 20px);
+  }
+  
+  .details-inner a {
+    color: white;
+    
+  }
+  
+  .footer-icons{
+    width: 100%;
+  }
+  
+  .icons-inner{
+    display: flex; 
+    justify-content: flex-end; 
+    padding-top: 3.7vh; 
+    padding-right: 7vw;
+  }
+  /* Footer */
+
+
